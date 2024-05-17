@@ -1,0 +1,130 @@
+/* BAGIAN PENTING */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0%;
+}
+
+h2, h3 {
+    color: #D2001A;
+}
+
+p {
+    text-indent: 2en;
+    font-family: sans-serif;
+    text-align: justify; 
+}
+
+#letter-spacing {
+    letter-spacing: 4px;
+}
+
+.card {
+    box-shadow: 0 4px 0 #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* BAGIAN HEADER */
+header {
+    display: inline;
+}
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: aqua;
+    background-image: repeating-linear-gradient(#a62349, #6fedd6);
+    text-align: center;
+    color: black;
+}
+
+/* BAGIAN NAVBAR */
+nav {
+    background-color: #006a71;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 390;
+    text-decoration: none;
+    color: #ff7e67;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    color: tomato;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+/* PENGATURAN IMAGE */
+.featured-image {
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .2s;
+    border-radius: 5px;
+}
+
+.featured-image:hover {
+    transform: scale(1.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* PENGATURAN MAIN */
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+.content {
+    float: left;
+    width: 70%;
+}
+
+/* PENGATURAN ASIDE */
+aside {
+    float: right;
+    width: 30%;
+    padding: 10px;
+}
+
+.profile {
+    text-align: center;
+
+}
+
+
+/* PENGATURAN FOOTER */
+footer {
+    padding: 15px;
+    color: #ff7e67;
+    background-color: #006a71;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* PENGATURAN RESPONSIVE */
+@media screen and (max-width: 1000px) { 
+    .content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
